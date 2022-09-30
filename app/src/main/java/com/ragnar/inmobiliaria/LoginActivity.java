@@ -85,10 +85,10 @@ public class LoginActivity extends AppCompatActivity/*implements ShakeDetector.L
                 != PackageManager.PERMISSION_GRANTED){
             requestPermissions(new String[]{Manifest.permission.CALL_PHONE},1000);
         }
-        if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.M
-                && checkSelfPermission(Manifest.permission.HIGH_SAMPLING_RATE_SENSORS)
-                != PackageManager.PERMISSION_GRANTED){
-            requestPermissions(new String[]{Manifest.permission.HIGH_SAMPLING_RATE_SENSORS},1000);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                && checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1000);
         }
     }
 
