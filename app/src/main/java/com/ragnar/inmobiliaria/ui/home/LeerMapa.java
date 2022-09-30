@@ -29,7 +29,7 @@ public class LeerMapa implements OnMapReadyCallback {
 
 
     public LeerMapa( Context context) {
-        this.inmobiliria= new LatLng(-33.312550, -66.356101);
+        this.inmobiliria= new LatLng(-33.311232, -66.355970);
         this.context= context;
     }
 

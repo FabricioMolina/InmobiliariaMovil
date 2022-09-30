@@ -11,11 +11,7 @@
         android:label="Mapa"
         tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.ragnar.inmobiliaria.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/nav_perfil"
         android:name="com.ragnar.inmobiliaria.ui.perfil.PerfilFragment"
