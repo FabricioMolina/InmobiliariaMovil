@@ -55,7 +55,7 @@ public class PagoFragment extends Fragment {
     }
     private void inicializarVista(View view) {
         rv = view.findViewById(R.id.rvIdPago);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(view.getContext(), 2, GridLayoutManager.VERTICAL, false);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(view.getContext(), 2, GridLayoutManager.HORIZONTAL, false);
         rv.setLayoutManager(gridLayoutManager);
     }
 

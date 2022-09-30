@@ -60,7 +60,11 @@
         android:id="@+id/nav_pagoFragment"
         android:name="com.ragnar.inmobiliaria.ui.pagos.PagoFragment"
         android:label="Pagos"
-        tools:layout="@layout/fragment_pago" />
+        tools:layout="@layout/fragment_pago" >
+        <action
+            android:id="@+id/action_nav_pagoFragment_to_pagoDetalleFragment"
+            app:destination="@id/nav_pagoDetalleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_contratoDetalleFragment"
         android:name="com.ragnar.inmobiliaria.ui.contratos.ContratoDetalleFragment"
@@ -75,4 +79,9 @@
         android:name="com.ragnar.inmobiliaria.ui.logout.LogoutFragment"
         android:label="Cerrar sesión"
         tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_pagoDetalleFragment"
+        android:name="com.ragnar.inmobiliaria.ui.pagos.PagoDetalleFragment"
+        android:label="fragment_pago_detalle"
+        tools:layout="@layout/fragment_pago_detalle" />
 </navigation>

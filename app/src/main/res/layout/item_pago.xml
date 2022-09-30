@@ -13,106 +13,67 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="696dp">
+        android:layout_height="339dp">
 
         <TextView
             android:id="@+id/Titulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pagos"
-            app:layout_constraintBottom_toTopOf="@+id/NumeroPago"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/NumeroPago"
-            android:layout_width="wrap_content"
-            android:layout_height="21dp"
-            android:text="Numero del Pago"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvNumeroPago"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvNumeroPago"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/IdContratoPago"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/NumeroPago" />
-
-        <TextView
-            android:id="@+id/IdContratoPago"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Codigo del Contrato"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvIdContratoPago"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNumeroPago" />
+            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
 
         <TextView
             android:id="@+id/tvIdContratoPago"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/textView17"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/IdContratoPago" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Importe"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvImportePago"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvIdContratoPago" />
+            app:layout_constraintTop_toBottomOf="@+id/tvNumeroPago" />
 
         <TextView
             android:id="@+id/tvImportePago"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/textView19"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fecha del Pago"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tvFechaPago"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvImportePago" />
+            app:layout_constraintTop_toBottomOf="@+id/tvIdContratoPago" />
 
         <TextView
             android:id="@+id/tvFechaPago"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+            app:layout_constraintTop_toBottomOf="@+id/tvImportePago" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

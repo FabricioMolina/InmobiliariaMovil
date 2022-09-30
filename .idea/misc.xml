@@ -19,11 +19,12 @@
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/fragment_lista_inmuebles.xml" value="0.12907608695652173" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/fragment_logout.xml" value="0.12771739130434784" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/fragment_pago.xml" value="0.13360507246376813" />
+        <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/fragment_pago_detalle.xml" value="0.21" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/fragment_perfil.xml" value="0.2" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/item_contrato.xml" value="0.25" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/item_inmueble.xml" value="0.25" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/item_inquilino.xml" value="0.33" />
-        <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/item_pago.xml" value="0.2" />
+        <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/item_pago.xml" value="0.33" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/layout/nav_header_menu.xml" value="0.25" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/menu/activity_menu_drawer.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/bebo_/AndroidStudioProjects/Inmobiliaria/app/src/main/res/menu/menu.xml" value="0.19583333333333333" />

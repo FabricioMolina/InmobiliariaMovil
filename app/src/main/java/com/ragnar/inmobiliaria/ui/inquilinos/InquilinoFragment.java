@@ -67,6 +67,11 @@ public class InquilinoFragment extends Fragment {
         rv.setLayoutManager(gridLayoutManager);
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        mViewModel.borrarInquilinos();
+    }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {

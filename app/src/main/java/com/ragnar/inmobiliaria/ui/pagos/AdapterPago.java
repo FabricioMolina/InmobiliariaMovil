@@ -36,11 +36,18 @@ public class AdapterPago extends RecyclerView.Adapter<AdapterPago.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Pago pago = lista.get(position);
-        holder.tvNumeroPago.setText(pago.getNumero() + "");
-        holder.tvIdContratoPago.setText(pago.getContrato().getIdContrato() + "");
-        holder.tvImportePago.setText(pago.getImporte() + "");
-        holder.tvFechaPago.setText(pago.getFechaDePago());
-
+        holder.tvNumeroPago.setText("Pago #"+pago.getNumero());
+        holder.tvIdContratoPago.setText("Contrato #"+pago.getContrato().getIdContrato() + "");
+        holder.tvImportePago.setText("$"+pago.getImporte() + "");
+        holder.tvFechaPago.setText("Fecha de Pago"+pago.getFechaDePago());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("pago", pago );
+                Navigation.findNavController(view).navigate(R.id.nav_pagoDetalleFragment, bundle);
+            }
+        });
         /*holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

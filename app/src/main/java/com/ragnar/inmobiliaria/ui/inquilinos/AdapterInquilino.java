@@ -36,13 +36,9 @@ public class AdapterInquilino extends RecyclerView.Adapter<AdapterInquilino.View
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Inquilino inquilino = lista.get(position);
         holder.tvTelefonoInquilino.setText(inquilino.getTelefono());
-        holder.tvNombreInquilino.setText(inquilino.getNombre());
-        holder.tvApellidoInquilino.setText(inquilino.getApellido());
-        holder.tvTrabajoInquilino.setText(inquilino.getLugarDeTrabajo());
+        holder.tvNombreInquilino.setText(inquilino.getNombre() + " " + inquilino.getApellido());
         holder.tvEmailInquilino.setText(inquilino.getEmail());
         holder.tvDniInquilino.setText(inquilino.getDNI() + "");
-        holder.tvTelefonoGarante.setText(inquilino.getTelefonoGarante());
-        holder.tvNombreGarante.setText(inquilino.getNombreGarante());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,12 +66,10 @@ public class AdapterInquilino extends RecyclerView.Adapter<AdapterInquilino.View
             super(itemView);
             tvTelefonoInquilino = itemView.findViewById(R.id.tvTelefonoInquilino);
             tvNombreInquilino = itemView.findViewById(R.id.tvNombreInquilino);
-            tvApellidoInquilino = itemView.findViewById(R.id.tvApellidoInquilino);
-            tvTrabajoInquilino = itemView.findViewById(R.id.tvLugarDeTrabajo);
+
             tvEmailInquilino = itemView.findViewById(R.id.tvEmailInquilino);
             tvDniInquilino = itemView.findViewById(R.id.tvDniInquilino);
-            tvTelefonoGarante = itemView.findViewById(R.id.tvTelefonoGarante);
-            tvNombreGarante = itemView.findViewById(R.id.tvNombreGarante);
+
 
         }
     }

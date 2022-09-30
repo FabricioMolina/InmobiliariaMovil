@@ -41,5 +41,8 @@ public class InquilinoViewModel extends AndroidViewModel {
         }
         listMutableLiveData.setValue(inquilinos);
     }
+    public void borrarInquilinos(){
+        inquilinos.clear();
+    }
     // TODO: Implement the ViewModel
 }
