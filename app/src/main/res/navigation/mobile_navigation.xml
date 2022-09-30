@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ragnar.inmobiliaria.ui.home.HomeFragment"
+        android:label="Mapa"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.ragnar.inmobiliaria.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.ragnar.inmobiliaria.ui.perfil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_inmueble"
+        android:name="com.ragnar.inmobiliaria.ui.inmueble.InmuebleFragment"
+        android:label="Inmuebles"
+        tools:layout="@layout/fragment_inmueble" />
+    <fragment
+        android:id="@+id/nav_inmuebleDetalle"
+        android:name="com.ragnar.inmobiliaria.ui.inmueble.InmuebleDetalleFragment"
+        android:label="Detalles del Inmueble"
+        tools:layout="@layout/fragment_inmueble_detalle" >
+        <action
+            android:id="@+id/action_inmuebleDetalleFragment_to_nav_inmueble"
+            app:destination="@id/nav_inmueble" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inquilinoFragment"
+        android:name="com.ragnar.inmobiliaria.ui.inquilinos.InquilinoFragment"
+        android:label="Inquilinos"
+        tools:layout="@layout/fragment_inquilino" />
+    <fragment
+
+        android:id="@+id/nav_contratoFragment"
+        android:name="com.ragnar.inmobiliaria.ui.contratos.ContratoFragment"
+        android:label="Contratos"
+        tools:layout="@layout/fragment_contrato" />
+    <fragment
+        android:id="@+id/nav_inquilinoDetalleFragment"
+        android:name="com.ragnar.inmobiliaria.ui.inquilinos.InquilinoDetalleFragment"
+        android:label="Detalles de Inquilino"
+        tools:layout="@layout/fragment_inquilino_detalle" >
+        <action
+            android:id="@+id/action_nav_inquilinoDetalleFragment_to_nav_inquilinoFragment"
+            app:destination="@id/nav_inquilinoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pagoFragment"
+        android:name="com.ragnar.inmobiliaria.ui.pagos.PagoFragment"
+        android:label="Pagos"
+        tools:layout="@layout/fragment_pago" />
+    <fragment
+        android:id="@+id/nav_contratoDetalleFragment"
+        android:name="com.ragnar.inmobiliaria.ui.contratos.ContratoDetalleFragment"
+        android:label="Detalles del Contrato"
+        tools:layout="@layout/fragment_contrato_detalle" >
+        <action
+            android:id="@+id/action_nav_contratoDetalleFragment_to_nav_contratoFragment"
+            app:destination="@id/nav_contratoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_logoutFragment"
+        android:name="com.ragnar.inmobiliaria.ui.logout.LogoutFragment"
+        android:label="Cerrar sesión"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

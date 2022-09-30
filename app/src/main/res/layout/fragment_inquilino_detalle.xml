@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1D0FF"
+    tools:context=".ui.inquilinos.InquilinoDetalleFragment">
+
+    <TextView
+        android:id="@+id/tvNombreInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inquilino"
+        app:layout_constraintBottom_toTopOf="@+id/DniInquilino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DniInquilino"
+        android:layout_width="55dp"
+        android:layout_height="16dp"
+        android:text="Dni"
+        app:layout_constraintBottom_toTopOf="@+id/tvDniInquilinoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/tvDniInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/LugarTrabajoInquilino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DniInquilino" />
+
+    <TextView
+        android:id="@+id/LugarTrabajoInquilino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugar De Trabajo"
+        app:layout_constraintBottom_toTopOf="@+id/tvLugarDeTrabajoInquilinoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDniInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/EmailInquilino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/tvEmailInquilinoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefonoInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/NombreGarante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Garante"
+        app:layout_constraintBottom_toTopOf="@+id/tvNombreGaranteDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/tvNombreGaranteDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombreg"
+        app:layout_constraintBottom_toTopOf="@+id/TelefonoGarante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreGarante" />
+
+    <TextView
+        android:id="@+id/tvEmailInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        app:layout_constraintBottom_toTopOf="@+id/NombreGarante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInquilino" />
+
+    <TextView
+        android:id="@+id/TelefonoGarante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono del Garante"
+        app:layout_constraintBottom_toTopOf="@+id/tvTelefonoGaranteDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreGaranteDetalle" />
+
+    <TextView
+        android:id="@+id/TelefonoInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        app:layout_constraintBottom_toTopOf="@+id/tvTelefonoInquilinoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLugarDeTrabajoInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/tvLugarDeTrabajoInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lugar"
+        app:layout_constraintBottom_toTopOf="@+id/TelefonoInquilinoDetalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LugarTrabajoInquilino" />
+
+    <TextView
+        android:id="@+id/tvTelefonoInquilinoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="telefono"
+        app:layout_constraintBottom_toTopOf="@+id/EmailInquilino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelefonoInquilinoDetalle" />
+
+    <TextView
+        android:id="@+id/tvTelefonoGaranteDetalle"
+        android:layout_width="64dp"
+        android:layout_height="16dp"
+        android:text="telefonog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TelefonoGarante" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
