@@ -82,13 +82,11 @@ public class LoginActivity extends AppCompatActivity/*implements ShakeDetector.L
     private void pedirPermisos() {
         if(Build.VERSION.SDK_INT>= Build.VERSION_CODES.M
                 && checkSelfPermission(Manifest.permission.CALL_PHONE)
-                != PackageManager.PERMISSION_GRANTED){
-            requestPermissions(new String[]{Manifest.permission.CALL_PHONE},1000);
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M
+                != PackageManager.PERMISSION_GRANTED
                 && checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION}, 1000);
+                != PackageManager.PERMISSION_GRANTED
+            ){
+            requestPermissions(new String[]{Manifest.permission.CALL_PHONE, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION},1000);
         }
     }
 
